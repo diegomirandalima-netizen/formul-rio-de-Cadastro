@@ -1,0 +1,120 @@
+<!DOCTYPE html> <!-- Declara que este documento é um arquivo HTML5 moderno -->
+<html lang="pt-BR"> <!-- Inicia o HTML e define o português do Brasil como idioma da página -->
+<head> <!-- Abre o cabeçalho, que contém configurações e metadados invisíveis ao usuário -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres UTF-8 para exibir acentos corretamente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a escala da página para o tamanho da tela de celulares -->
+    <title>Cadastro de Alunos - Curso de Informática</title> <!-- Define o título que aparece na aba do navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Vincula o arquivo externo de estilização CSS a esta página -->
+</head> <!-- Fecha a seção de cabeçalho do documento -->
+<body> <!-- Abre o corpo do documento, onde fica todo o conteúdo visível do site -->
+
+    <div class="form-container"> <!-- Cria uma caixa para agrupar e limitar visualmente o formulário -->
+        <h1>Inscrição no Curso de Informática</h1> <!-- Título principal do topo do formulário -->
+        <p>Preencha os dados abaixo para solicitar a sua vaga.</p> <!-- Texto explicativo abaixo do título -->
+
+        <!-- Inicia o formulário; define que os dados não vão para nenhum link externo (#) via método seguro (POST) e aceita arquivos -->
+        <form action="#" method="POST" enctype="multipart/form-data">
+            
+            <!-- 1. Nome Completo -->
+            <div class="form-group"> <!-- Agrupa o rótulo e o campo de digitação do nome -->
+                <label for="nome">Nome Completo: *</label> <!-- Rótulo de texto conectado ao input do nome -->
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required> <!-- Campo para digitar texto, obrigatório -->
+            </div> <!-- Fecha o grupo do nome -->
+
+            <!-- 2. E-mail -->
+            <div class="form-group"> <!-- Agrupa o rótulo e o campo de digitação do e-mail -->
+                <label for="email">E-mail: *</label> <!-- Rótulo de texto conectado ao input do e-mail -->
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required> <!-- Campo exclusivo para e-mails válidos, obrigatório -->
+            </div> <!-- Fecha o grupo do e-mail -->
+
+            <!-- 3. Data de Nascimento -->
+            <div class="form-group"> <!-- Agrupa o rótulo e o campo da data de nascimento -->
+                <label for="nascimento">Data de Nascimento: *</label> <!-- Rótulo de texto conectado ao input da data -->
+                <input type="date" id="nascimento" name="nascimento" required> <!-- Abre um calendário nativo para escolher a data, obrigatório -->
+            </div> <!-- Fecha o grupo da data -->
+
+            <!-- 4. Telefone -->
+            <div class="form-group"> <!-- Agrupa o rótulo e o campo de digitação do telefone -->
+                <label for="telefone">Telefone: *</label> <!-- Rótulo de texto conectado ao input do telefone -->
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required> <!-- Campo otimizado para números de telefone, obrigatório -->
+            </div> <!-- Fecha o grupo do telefone -->
+
+            <!-- 5. Senha -->
+            <div class="form-group"> <!-- Agrupa o rótulo e o campo de digitação da senha -->
+                <label for="senha">Senha: *</label> <!-- Rótulo de texto conectado ao input da senha -->
+                <input type="password" id="senha" name="senha" minlength="6" placeholder="Crie uma senha" required> <!-- Campo que oculta os caracteres digitados, exige no mínimo 6 letras/números, obrigatório -->
+            </div> <!-- Fecha o grupo da senha -->
+
+            <!-- Desafio Extra: Cidade -->
+            <div class="form-group"> <!-- Agrupa o rótulo e o campo de digitação da cidade -->
+                <label for="cidade">Cidade: *</label> <!-- Rótulo de texto conectado ao input da cidade -->
+                <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required> <!-- Campo para digitar texto simples, obrigatório -->
+            </div> <!-- Fecha o grupo da cidade -->
+
+            <!-- Desafio Extra: Cor Favorita -->
+            <div class="form-group"> <!-- Agrupa o rótulo e o seletor de cor -->
+                <label for="cor">Cor Favorita:</label> <!-- Rótulo de texto conectado ao input da cor -->
+                <input type="color" id="cor" name="cor" value="#4A90E2"> <!-- Abre uma paleta de cores com um tom azul definido por padrão -->
+            </div> <!-- Fecha o grupo da cor -->
+
+            <!-- Desafio Extra: Upload de Foto -->
+            <div class="form-group"> <!-- Agrupa o rótulo e o campo de envio de arquivo -->
+                <label for="foto">Foto de Perfil:</label> <!-- Rótulo de texto conectado ao input da foto -->
+                <input type="file" id="foto" name="foto" accept="image/*"> <!-- Botão para carregar arquivos do computador, limitado apenas a imagens -->
+            </div> <!-- Fecha o grupo da foto -->
+
+            <!-- 6. Curso de Interesse -->
+            <div class="form-group"> <!-- Agrupa o rótulo e a lista de seleção de cursos -->
+                <label for="curso">Curso de Interesse: *</label> <!-- Rótulo de texto conectado à lista de seleção -->
+                <select id="curso" name="curso" required> <!-- Abre a lista de seleção suspensa, obrigatória -->
+                    <option value="" disabled selected>Selecione um curso...</option> <!-- Opção inicial desativada que serve apenas como instrução -->
+                    <option value="desenvolvimento">Técnico em Desenvolvimento de Sistemas</option> <!-- Opção de curso disponível para seleção -->
+                    <option value="eletrotecnica">Técnico em Eletrotécnica</option> <!-- Opção de curso disponível para seleção -->
+                    <option value="informatica_basica">Informática Básica</option> <!-- Opção de curso disponível para seleção -->
+                </select> <!-- Fecha a lista de seleção suspensa -->
+            </div> <!-- Fecha o grupo do curso -->
+
+            <!-- 7. Turno (Radio) -->
+            <div class="form-group"> <!-- Agrupa o rótulo principal e as opções de botões de rádio -->
+                <label>Turno de Preferência: *</label> <!-- Rótulo do grupo de turnos -->
+                <div class="radio-group"> <!-- Caixa interna para alinhar os botões de opção via CSS -->
+                    <label> <!-- Rótulo que envolve o primeiro botão para permitir clicar no texto -->
+                        <input type="radio" name="turno" value="manha" required> Manhã <!-- Botão de escolha única para o período matutino, obrigatório -->
+                    </label> <!-- Fecha o rótulo da opção manhã -->
+                    <label> <!-- Rótulo que envolve o segundo botão -->
+                        <input type="radio" name="turno" value="tarde"> Tarde <!-- Botão de escolha única para o período vespertino do mesmo grupo "turno" -->
+                    </label> <!-- Fecha o rótulo da opção tarde -->
+                    <label> <!-- Rótulo que envolve o terceiro botão -->
+                        <input type="radio" name="turno" value="noite"> Noite <!-- Botão de escolha única para o período noturno do mesmo grupo "turno" -->
+                    </label> <!-- Fecha o rótulo da opção noite -->
+                </div> <!-- Fecha a caixa do grupo de botões de rádio -->
+            </div> <!-- Fecha o grupo geral do turno -->
+
+            <!-- 8. Conhecimentos Prévios (Checkbox) -->
+            <div class="form-group"> <!-- Agrupa o rótulo principal e as caixas de seleção múltipla -->
+                <label>Conhecimentos Prévios:</label> <!-- Rótulo do grupo de conhecimentos -->
+                <div class="checkbox-group"> <!-- Caixa interna para alinhar as caixas de seleção via CSS -->
+                    <label> <!-- Rótulo da primeira caixa de seleção -->
+                        <input type="checkbox" name="conhecimentos" value="html"> HTML <!-- Caixa de múltipla escolha para a opção HTML -->
+                    </label> <!-- Fecha o rótulo do HTML -->
+                    <label> <!-- Rótulo da segunda caixa de seleção -->
+                        <input type="checkbox" name="conhecimentos" value="css"> CSS <!-- Caixa de múltipla escolha para a opção CSS -->
+                    </label> <!-- Fecha o rótulo do CSS -->
+                    <label> <!-- Rótulo da terceira caixa de seleção -->
+                        <input type="checkbox" name="conhecimentos" value="javascript"> JavaScript <!-- Caixa de múltipla escolha para a opção JavaScript -->
+                    </label> <!-- Fecha o rótulo do JavaScript -->
+                    <label> <!-- Rótulo da quarta caixa de seleção -->
+                        <input type="checkbox" name="conhecimentos" value="banco_dados"> Banco de Dados <!-- Caixa de múltipla escolha para a opção Banco de Dados -->
+                    </label> <!-- Fecha o rótulo do Banco de Dados -->
+                </div> <!-- Fecha a caixa do grupo de checkboxes -->
+            </div> <!-- Fecha o grupo geral de conhecimentos -->
+
+            <!-- 9. Por que deseja fazer o curso? -->
+            <div class="form-group"> <!-- Agrupa o rótulo e a caixa de texto grande -->
+                <label for="motivo">Por que deseja fazer o curso?</label> <!-- Rótulo de texto conectado à área de texto -->
+                <textarea id="motivo" name="motivo" rows="4" placeholder="Conte-nos um pouco sobre suas motivações..."></textarea> <!-- Caixa de texto de múltiplas linhas com altura inicial de 4 linhas -->
+            </div> <!-- Fecha o grupo do motivo -->
+
+            <!-- Desafio Extra: Termos de Inscrição -->
+            <div class="form-group compliance"> <!-- Agrupa a caixa de aceitação dos termos com classe específica de conformidade -->
+                <label> <!-- Rótulo que envolve o checkbox dos termos -->

@@ -1,0 +1,147 @@
+/* Configurações Globais */
+* {
+    margin: 0;                             /* Remove as margens padrão de todos os elementos */
+    padding: 0;                            /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box;                /* Inclui bordas e preenchimentos no cálculo total do tamanho do elemento */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a lista de fontes padrão para o site */
+}
+
+body {
+    background-color: #f4f7f6;             /* Define a cor de fundo da página (tom cinza claro esverdeado) */
+    display: flex;                         /* Ativa o modo de layout Flexbox no corpo da página */
+    justify-content: center;               /* Centraliza o conteúdo horizontalmente na tela */
+    align-items: center;                   /* Centraliza o conteúdo verticalmente na tela */
+    padding: 40px 20px;                    /* Adiciona um espaçamento interno nas bordas da página */
+    min-height: 100vh;                     /* Garante que a página tenha no mínimo a altura total da tela do navegador */
+}
+
+/* Container do Formulário */
+.form-container {
+    background-color: #ffffff;             /* Define o fundo do formulário como branco */
+    max-width: 600px;                      /* Limita a largura máxima do formulário a 600 pixels */
+    width: 100%;                           /* Faz o formulário ocupar toda a largura disponível até o limite máximo */
+    padding: 30px;                         /* Cria um espaçamento interno entre as bordas e o conteúdo do formulário */
+    border-radius: 8px;                    /* Arredonda os quatro cantos do formulário */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Aplica uma sombra suave nas bordas externas do container */
+}
+
+h1 {
+    color: #2c3e50;                        /* Define a cor do título principal (tom azul escuro escuro) */
+    font-size: 24px;                       /* Define o tamanho do texto do título */
+    margin-bottom: 8px;                    /* Cria uma margem de espaçamento abaixo do título */
+    text-align: center;                    /* Centraliza o texto do título */
+}
+
+p {
+    color: #7f8c8d;                        /* Define a cor do parágrafo (tom cinza médio) */
+    font-size: 14px;                       /* Define o tamanho da fonte do parágrafo */
+    text-align: center;                    /* Centraliza o texto do parágrafo */
+    margin-bottom: 24px;                   /* Cria um espaçamento abaixo do parágrafo */
+}
+
+/* Grupos de Campos */
+.form-group {
+    margin-bottom: 20px;                   /* Cria um espaçamento abaixo de cada bloco de campo */
+    display: flex;                         /* Ativa o layout Flexbox para organizar o conteúdo do bloco */
+    flex-direction: column;                /* Alinha os itens do bloco verticalmente (label em cima do input) */
+}
+
+label {
+    font-weight: 600;                      /* Deixa o texto do rótulo em negrito */
+    margin-bottom: 8px;                    /* Adiciona um espaçamento entre o rótulo e o campo de digitação */
+    color: #34495e;                        /* Define a cor do texto do rótulo */
+    font-size: 14px;                       /* Define o tamanho da fonte do rótulo */
+}
+
+/* Inputs de Texto, Seleção e Textarea */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;                           /* Faz com que todos os campos ocupem 100% da largura do container */
+    padding: 10px;                         /* Adiciona um espaçamento interno confortável dentro dos campos */
+    border: 1px solid #ccc;                /* Cria uma borda fina cinza ao redor dos campos */
+    border-radius: 4px;                    /* Arredonda levemente os cantos dos campos */
+    font-size: 14px;                       /* Define o tamanho do texto digitado ou selecionado */
+    color: #333;                           /* Define a cor do texto digitado */
+    transition: border-color 0.3s ease;    /* Suaviza a mudança de cor da borda quando o campo for clicado */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3498db;                 /* Muda a cor da borda para azul quando o usuário clica no campo */
+    outline: none;                         /* Remove a linha de contorno padrão do navegador ao focar no elemento */
+}
+
+/* Customização para o input do tipo Color */
+input[type="color"] {
+    width: 60px;                           /* Define uma largura fixa para o seletor de cores */
+    height: 40px;                          /* Define uma altura fixa para o seletor de cores */
+    border: 1px solid #ccc;                /* Adiciona uma borda fina cinza */
+    border-radius: 4px;                    /* Arredonda os cantos do botão seletor */
+    cursor: pointer;                       /* Altera o ícone do mouse para uma mãozinha ao passar por cima */
+}
+
+/* Checkboxes e Radios Alinhamentos */
+.radio-group, 
+.checkbox-group {
+    display: flex;                         /* Ativa o Flexbox para organizar os botões de opção/seleção */
+    flex-direction: column;                /* Organiza as opções em uma lista vertical */
+    gap: 8px;                              /* Cria um espaço de 8 pixels entre cada opção da lista */
+    margin-top: 4px;                       /* Adiciona um pequeno espaçamento no topo do grupo */
+}
+
+.radio-group label, 
+.checkbox-group label,
+.compliance label {
+    font-weight: normal;                   /* Remove o negrito dos rótulos destas opções específicas */
+    display: flex;                         /* Ativa o Flexbox para alinhar a caixinha e o texto na mesma linha */
+    align-items: center;                   /* Centraliza verticalmente o texto com a caixinha de seleção */
+    gap: 8px;                              /* Cria um espaçamento entre a caixinha e o texto explicativo */
+    cursor: pointer;                       /* Transforma o ponteiro do mouse em "mãozinha" para indicar clique disponível */
+}
+
+/* Área de Texto */
+textarea {
+    resize: vertical;                      /* Permite que o usuário redimensione o campo apenas para cima e para baixo */
+}
+
+/* Botões */
+.button-group {
+    display: flex;                         /* Ativa o Flexbox para posicionar os botões lado a lado */
+    gap: 15px;                             /* Cria um espaçamento de 15 pixels entre os botões */
+    margin-top: 25px;                      /* Adiciona um espaço acima do bloco de botões */
+}
+
+button {
+    flex: 1;                               /* Faz com que ambos os botões dividam o espaço disponível igualmente */
+    padding: 12px;                         /* Cria um espaçamento interno vertical e horizontal para aumentar o botão */
+    font-size: 16px;                       /* Define o tamanho da fonte do texto do botão */
+    font-weight: bold;                     /* Aplica negrito ao texto do botão */
+    border: none;                          /* Remove a borda padrão do botão */
+    border-radius: 4px;                    /* Arredonda os cantos dos botões */
+    cursor: pointer;                       /* Altera o cursor do mouse para indicar elemento clicável */
+    transition: background-color 0.2s ease;/* Cria um efeito suave de transição ao mudar a cor de fundo */
+}
+
+.btn-submit {
+    background-color: #2ecc71;             /* Define o fundo do botão de envio como verde */
+    color: white;                          /* Define a cor do texto do botão como branco */
+}
+
+.btn-submit:hover {
+    background-color: #27ae60;             /* Escurece o verde do botão quando o usuário passa o mouse por cima */
+}
+
+.btn-reset {
+    background-color: #e74c3c;             /* Define o fundo do botão de limpar como vermelho */
+    color: white;                          /* Define a cor do texto do botão como branco */
+}
+
+.btn-reset:hover {
+    background-color: #c0392b;             /* Escurece o vermelho do botão quando o usuário passa o mouse por cima */
+}
