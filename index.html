@@ -8,164 +8,164 @@
 </head> 
 <body>
 
-    <div class="form-container"> <!-- Cria uma caixa para agrupar e limitar visualmente o formulário -->
+    <div class="form-container"> <!-- Cria uma caixa para agrupar e limitar visualmente o formulario -->
 
 
-        <h1>Inscrição no Curso de Informática</h1> <!-- Título principal do topo do formulário -->
+        <h1>Inscrição no Curso de Informática</h1> <!-- Titulo principal do topo do formulario -->
 
-        <p>Preencha os dados abaixo para solicitar a sua vaga.</p> <!-- Texto explicativo abaixo do título -->
+        <p>Preencha os dados abaixo para solicitar a sua vaga.</p> <!-- Texto explicativo abaixo do titulo -->
 
-        <!-- Inicia o formulário; define que os dados não vão para nenhum link externo (#) via método seguro (POST) e aceita arquivos -->
+        <!-- Inicia o formulário; define que os dados nao vao para nenhum link externo (#) via metodo seguro (POST) e aceita arquivos -->
         <form action="#" method="POST" enctype="multipart/form-data">
             
             <!-- 1. Nome Completo -->
-            <div class="form-group"> <!-- Agrupa o rótulo e o campo de digitação do nome -->
+            <div class="form-group"> <!-- Agrupa o rotulo e o campo de digitacao do nome -->
 
-                <label for="nome">Nome Completo: *</label> <!-- Rótulo de texto conectado ao input do nome -->
+                <label for="nome">Nome Completo: *</label> <!-- Rotulo de texto conectado ao input do nome -->
 
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required> <!-- Campo para digitar texto, obrigatório -->
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required> <!-- Campo para digitar texto, obrigatorio -->
 
             </div> <!-- Fecha o grupo do nome -->
 
             <!-- 2. E-mail -->
-            <div class="form-group"> <!-- Agrupa o rótulo e o campo de digitação do e-mail -->
+            <div class="form-group"> <!-- Agrupa o rotulo e o campo de digitacao do e-mail -->
 
-                <label for="email">E-mail: *</label> <!-- Rótulo de texto conectado ao input do e-mail -->
+                <label for="email">E-mail: *</label> <!-- Rotulo de texto conectado ao input do e-mail -->
 
-                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required> <!-- Campo exclusivo para e-mails válidos, obrigatório -->
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required> <!-- Campo exclusivo para e-mails validos, obrigatorio -->
 
             </div> <!-- Fecha o grupo do e-mail -->
 
             <!-- 3. Data de Nascimento -->
-            <div class="form-group"> <!-- Agrupa o rótulo e o campo da data de nascimento -->
+            <div class="form-group"> <!-- Agrupa o rotulo e o campo da data de nascimento -->
 
-                <label for="nascimento">Data de Nascimento: *</label> <!-- Rótulo de texto conectado ao input da data -->
+                <label for="nascimento">Data de Nascimento: *</label> <!-- Rotulo de texto conectado ao input da data -->
 
-                <input type="Data de Nascimento" id="Data de Nascimento" name="Data de Nascimento" placeholder="Data de Nascimento com /" required> <!-- Abre um calendário nativo para escolher a data, obrigatório -->
+                <input type="Data de Nascimento" id="Data de Nascimento" name="Data de Nascimento" placeholder="Data de Nascimento com /" required> <!-- Abre um calendario nativo para escolher a data, obrigatorio -->
 
             </div> <!-- Fecha o grupo da data -->
 
             <!-- 4. Telefone -->
-            <div class="form-group"> <!-- Agrupa o rótulo e o campo de digitação do telefone -->
+            <div class="form-group"> <!-- Agrupa o rotulo e o campo de digitacao do telefone -->
 
-                <label for="telefone">Telefone: *</label> <!-- Rótulo de texto conectado ao input do telefone -->
+                <label for="telefone">Telefone: *</label> <!-- Rotulo de texto conectado ao input do telefone -->
 
-                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required> <!-- Campo otimizado para números de telefone, obrigatório -->
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required> <!-- Campo otimizado para numeros de telefone, obrigatorio -->
 
             </div> <!-- Fecha o grupo do telefone -->
 
             <!-- 5. Senha -->
-            <div class="form-group"> <!-- Agrupa o rótulo e o campo de digitação da senha -->
+            <div class="form-group"> <!-- Agrupa o rotulo e o campo de digitacao da senha -->
 
-                <label for="senha">Senha: *</label> <!-- Rótulo de texto conectado ao input da senha -->
+                <label for="senha">Senha: *</label> <!-- Rotulo de texto conectado ao input da senha -->
 
-                <input type="password" id="senha" name="senha" minlength="6" placeholder="Crie uma senha" required> <!-- Campo que oculta os caracteres digitados, exige no mínimo 6 letras/números, obrigatório -->
+                <input type="password" id="senha" name="senha" minlength="6" placeholder="Crie uma senha" required> <!-- Campo que oculta os caracteres digitados, exige no minimo 6 letras/numeros, obrigatorio -->
             </div> <!-- Fecha o grupo da senha -->
 
             <!-- Desafio Extra: Cidade -->
-            <div class="form-group"> <!-- Agrupa o rótulo e o campo de digitação da cidade -->
+            <div class="form-group"> <!-- Agrupa o rotulo e o campo de digitacao da cidade -->
 
-                <label for="cidade">Cidade: *</label> <!-- Rótulo de texto conectado ao input da cidade -->
+                <label for="cidade">Cidade: *</label> <!-- Rotulo de texto conectado ao input da cidade -->
 
-                <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required> <!-- Campo para digitar texto simples, obrigatório -->
+                <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required> <!-- Campo para digitar texto simples, obrigatorio -->
             </div> <!-- Fecha o grupo da cidade -->
 
             <!-- Desafio Extra: Cor Favorita -->
-            <div class="form-group"> <!-- Agrupa o rótulo e o seletor de cor -->
+            <div class="form-group"> <!-- Agrupa o rotulo e o seletor de cor -->
 
-                <label for="cor">Cor Favorita:</label> <!-- Rótulo de texto conectado ao input da cor -->
+                <label for="cor">Cor Favorita:</label> <!-- Rotulo de texto conectado ao input da cor -->
 
-                <input type="color" id="cor" name="cor" value="#4A90E2"> <!-- Abre uma paleta de cores com um tom azul definido por padrão -->
+                <input type="color" id="cor" name="cor" value="#4A90E2"> <!-- Abre uma paleta de cores com um tom azul definido por padrao -->
 
             </div> <!-- Fecha o grupo da cor -->
 
             <!-- Desafio Extra: Upload de Foto -->
-            <div class="form-group"> <!-- Agrupa o rótulo e o campo de envio de arquivo -->
+            <div class="form-group"> <!-- Agrupa o rotulo e o campo de envio de arquivo -->
 
-                <label for="foto">Foto de Perfil:</label> <!-- Rótulo de texto conectado ao input da foto -->
+                <label for="foto">Foto de Perfil:</label> <!-- Rotulo de texto conectado ao input da foto -->
 
-                <input type="file" id="foto" name="foto" accept="image/*"> <!-- Botão para carregar arquivos do computador, limitado apenas a imagens -->
+                <input type="file" id="foto" name="foto" accept="image/*"> <!-- Botao para carregar arquivos do computador, limitado apenas a imagens -->
 
             </div> <!-- Fecha o grupo da foto -->
 
             <!-- 6. Curso de Interesse -->
-            <div class="form-group"> <!-- Agrupa o rótulo e a lista de seleção de cursos -->
+            <div class="form-group"> <!-- Agrupa o rotulo e a lista de selecao de cursos -->
 
-                <label for="curso">Curso de Interesse: *</label> <!-- Rótulo de texto conectado à lista de seleção -->
+                <label for="curso">Curso de Interesse: *</label> <!-- Rotulo de texto conectado a lista de selecao -->
 
-                <select id="curso" name="curso" required> <!-- Abre a lista de seleção suspensa, obrigatória -->
+                <select id="curso" name="curso" required> <!-- Abre a lista de selecao suspensa, obrigatoria -->
                     
-                    <option value="" disabled selected>Selecione um curso...</option> <!-- Opção inicial desativada que serve apenas como instrução -->
+                    <option value="" disabled selected>Selecione um curso...</option> <!-- Opcao inicial desativada que serve apenas como instrucao -->
 
-                    <option value="desenvolvimento">Técnico em Desenvolvimento de Sistemas</option> <!-- Opção de curso disponível para seleção -->
+                    <option value="desenvolvimento">Técnico em Desenvolvimento de Sistemas</option> <!-- Opcao de curso disponivel para selecao -->
 
-                    <option value="eletrotecnica">Técnico em Eletrotécnica</option> <!-- Opção de curso disponível para seleção -->
+                    <option value="eletrotecnica">Técnico em Eletrotécnica</option> <!-- Opcao de curso disponivel para selecao -->
 
-                    <option value="informatica_basica">Informática Básica</option> <!-- Opção de curso disponível para seleção -->
-                </select> <!-- Fecha a lista de seleção suspensa -->
+                    <option value="informatica_basica">Informática Básica</option> <!-- Opcao de curso disponivel para selecao -->
+                </select> <!-- Fecha a lista de selecao suspensa -->
             </div> <!-- Fecha o grupo do curso -->
 
             <!-- 7. Turno (Radio) -->
-            <div class="form-group"> <!-- Agrupa o rótulo principal e as opções de botões de rádio -->
+            <div class="form-group"> <!-- Agrupa o rotulo principal e as opcoes de botoes de radio -->
 
-                <label>Turno de Preferência: *</label> <!-- Rótulo do grupo de turnos -->
+                <label>Turno de Preferência: *</label> <!-- Rotulo do grupo de turnos -->
 
-                <div class="radio-group"> <!-- Caixa interna para alinhar os botões de opção via CSS -->
+                <div class="radio-group"> <!-- Caixa interna para alinhar os botoes de opcao via CSS -->
 
-                    <label> <!-- Rótulo que envolve o primeiro botão para permitir clicar no texto -->
+                    <label> <!-- Rotulo que envolve o primeiro botao para permitir clicar no texto -->
 
-                        <input type="radio" name="turno" value="manha" required> Manhã <!-- Botão de escolha única para o período matutino, obrigatório -->
+                        <input type="radio" name="turno" value="manha" required> Manhã <!-- Botao de escolha unica para o periodo matutino, obrigatorio -->
 
-                    </label> <!-- Fecha o rótulo da opção manhã -->
+                    </label> <!-- Fecha o rotulo da opcao manha -->
 
-                    <label> <!-- Rótulo que envolve o segundo botão -->
+                    <label> <!-- Rotulo que envolve o segundo botao -->
 
-                        <input type="radio" name="turno" value="tarde"> Tarde <!-- Botão de escolha única para o período vespertino do mesmo grupo "turno" -->
+                        <input type="radio" name="turno" value="tarde"> Tarde <!-- Botao de escolha unica para o periodo vespertino do mesmo grupo "turno" -->
 
-                    </label> <!-- Fecha o rótulo da opção tarde -->
+                    </label> <!-- Fecha o rotulo da opcao tarde -->
 
-                    <label> <!-- Rótulo que envolve o terceiro botão -->
+                    <label> <!-- Rotulo que envolve o terceiro botao -->
 
-                        <input type="radio" name="turno" value="noite"> Noite <!-- Botão de escolha única para o período noturno do mesmo grupo "turno" -->
+                        <input type="radio" name="turno" value="noite"> Noite <!-- Botao de escolha unica para o periodo noturno do mesmo grupo "turno" -->
 
-                    </label> <!-- Fecha o rótulo da opção noite -->
+                    </label> <!-- Fecha o rotulo da opcao noite -->
 
-                </div> <!-- Fecha a caixa do grupo de botões de rádio -->
+                </div> <!-- Fecha a caixa do grupo de botoes de radio -->
 
             </div> <!-- Fecha o grupo geral do turno -->
 
 
-            <!-- 8. Conhecimentos Prévios (Checkbox) -->
+            <!-- 8. Conhecimentos Previos (Checkbox) -->
 
-            <div class="form-group"> <!-- Agrupa o rótulo principal e as caixas de seleção múltipla -->
+            <div class="form-group"> <!-- Agrupa o rotulo principal e as caixas de selecao multipla -->
 
-                <label>Conhecimentos Prévios:</label> <!-- Rótulo do grupo de conhecimentos -->
+                <label>Conhecimentos Prévios:</label> <!-- Rotulo do grupo de conhecimentos -->
 
-                <div class="checkbox-group"> <!-- Caixa interna para alinhar as caixas de seleção via CSS -->
+                <div class="checkbox-group"> <!-- Caixa interna para alinhar as caixas de selecao via CSS -->
 
-                    <label> <!-- Rótulo da primeira caixa de seleção -->
+                    <label> <!-- Rotulo da primeira caixa de selecao -->
 
-                        <input type="checkbox" name="conhecimentos" value="html"> HTML <!-- Caixa de múltipla escolha para a opção HTML -->
+                        <input type="checkbox" name="conhecimentos" value="html"> HTML <!-- Caixa de multipla escolha para a opcao HTML -->
 
-                    </label> <!-- Fecha o rótulo do HTML -->
+                    </label> <!-- Fecha o rotulo do HTML -->
 
-                    <label> <!-- Rótulo da segunda caixa de seleção -->
+                    <label> <!-- Rotulo da segunda caixa de selecao -->
 
-                        <input type="checkbox" name="conhecimentos" value="css"> CSS <!-- Caixa de múltipla escolha para a opção CSS -->
+                        <input type="checkbox" name="conhecimentos" value="css"> CSS <!-- Caixa de multipla escolha para a opcao CSS -->
 
-                    </label> <!-- Fecha o rótulo do CSS -->
+                    </label> <!-- Fecha o rotulo do CSS -->
 
-                    <label> <!-- Rótulo da terceira caixa de seleção -->
+                    <label> <!-- Rotulo da terceira caixa de selecao -->
 
-                        <input type="checkbox" name="conhecimentos" value="javascript"> JavaScript <!-- Caixa de múltipla escolha para a opção JavaScript -->
+                        <input type="checkbox" name="conhecimentos" value="javascript"> JavaScript <!-- Caixa de multipla escolha para a opcao JavaScript -->
 
-                    </label> <!-- Fecha o rótulo do JavaScript -->
+                    </label> <!-- Fecha o rotulo do JavaScript -->
 
-                    <label> <!-- Rótulo da quarta caixa de seleção -->
+                    <label> <!-- Rotulo da quarta caixa de selecao -->
 
-                        <input type="checkbox" name="conhecimentos" value="banco_dados"> Banco de Dados <!-- Caixa de múltipla escolha para a opção Banco de Dados -->
+                        <input type="checkbox" name="conhecimentos" value="banco_dados"> Banco de Dados <!-- Caixa de multipla escolha para a opcao Banco de Dados -->
 
-                    </label> <!-- Fecha o rótulo do Banco de Dados -->
+                    </label> <!-- Fecha o rotulo do Banco de Dados -->
 
                 </div> <!-- Fecha a caixa do grupo de checkboxes -->
 
@@ -174,18 +174,18 @@
 
             <!-- 9. Por que deseja fazer o curso? -->
 
-            <div class="form-group"> <!-- Agrupa o rótulo e a caixa de texto grande -->
+            <div class="form-group"> <!-- Agrupa o rotulo e a caixa de texto grande -->
 
-                <label for="motivo">Por que deseja fazer o curso?</label> <!-- Rótulo de texto conectado à área de texto -->
+                <label for="motivo">Por que deseja fazer o curso?</label> <!-- Rotulo de texto conectado a area de texto -->
 
-                <textarea id="motivo" name="motivo" rows="4" placeholder="Conte-nos um pouco sobre suas motivações..."></textarea> <!-- Caixa de texto de múltiplas linhas com altura inicial de 4 linhas -->
+                <textarea id="motivo" name="motivo" rows="4" placeholder="Conte-nos um pouco sobre suas motivações..."></textarea> <!-- Caixa de texto de multiplas linhas com altura inicial de 4 linhas -->
 
             </div> <!-- Fecha o grupo do motivo -->
 
-            <!-- Desafio Extra: Termos de Inscrição -->
+            <!-- Desafio Extra: Termos de Inscricao -->
 
-            <div class="form-group compliance"> <!-- Agrupa a caixa de aceitação dos termos com classe específica de conformidade -->
+            <div class="form-group compliance"> <!-- Agrupa a caixa de aceitacao dos termos com classe especifica de conformidade -->
 
-                <label> <!-- Rótulo que envolve o checkbox dos termos -->
+                <label> <!-- Rotulo que envolve o checkbox dos termos -->
     </body>
 </html>               
